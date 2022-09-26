@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family:amenfont;
+    src: url(./fonts/JosefinSans-VariableFont_wght.ttf);
+}
+body{
+    background-image: linear-gradient(to bottom, rgb(245, 162, 131), antiquewhite);
+    font-family: amenfont;
+}
+.menu{
+    background-image: linear-gradient(to bottom, rgb(245, 162, 131), antiquewhite);
+    height: 70px;
+    width: 95vw;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 0 10px black;
+    padding: 10px;
+    margin: 10px;
+}
+.logo{
+    color: aliceblue;
+    font-size: 35px;
+    padding: 10px;
+    border-radius: 50%;
+}
+.menu-items{
+    display:flex;
+    list-style: none;
+    margin-right: 30px;
+    font-family: amenfont;
+    justify-content: center;
+
+}
+.menu-items li{
+    border-radius: 3px;
+    margin: auto;
+    
+}
+.menu-items li a{
+    padding: 7px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    color: black;
+}
+.menu-items li:hover, li.active{
+    background-color: rgb(245, 162, 131);
+    transition: .4s;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(200px, auto);
+    gap: 15px ;
+    padding: 10px;
+    margin: 100px;
+}
+
+.grid-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: beige;
+    border-radius: 2px;
+
+    transition: transform 0.5s ease-in-out;
+    border: solid 1px white;
+}
+.grid-item:hover{
+    filter: opacity(1);
+    transform: scale(1.02);
+}
+.grid-item img{
+    width: 100%;
+}
+
+.pie{
+    background-image: linear-gradient(to bottom, antiquewhite, rgb(245, 162, 131));
+    height: 70px;
+    width: 100vw;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    box-shadow: 5px 0 10px black;
+    padding: 10px;
+    margin: 10px;
+}
+.pie a{
+    color: black;
+}
+.pie i{
+    font-family: 'Courier New', Courier, monospace;
+}
